@@ -25,5 +25,13 @@ urlpatterns = [
     path('lugares/', include('vegane.urls')),
     path('tips/', include('vegane.urls')),
     path('unilever/', include('vegane.urls')),
+    path('vegan/', include('vegane.urls')),
+    path('mercado/', include('vegane.urls')),
+    path('leche/', include('vegane.urls')),
+    path('documental/', include('vegane.urls')),
+    path('china/', include('vegane.urls')),
+    path('beyond/', include('vegane.urls')),
+    path('australia/', include('vegane.urls')),
+    path('activismo/', include('vegane.urls')),
 
 ]
