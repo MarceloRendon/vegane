@@ -10263,6 +10263,7 @@ footer .copyright {
 header.masthead {
   margin-bottom: 50px;
   background: no-repeat center center;
+  background-image: url(../img/bannernoticia4.png);
   background-color: #6c757d;
   background-attachment: scroll;
   position: relative;

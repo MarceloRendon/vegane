@@ -24,4 +24,6 @@ urlpatterns = [
     path('noticias/', include('vegane.urls')),
     path('lugares/', include('vegane.urls')),
     path('tips/', include('vegane.urls')),
+    path('unilever/', include('vegane.urls')),
+
 ]

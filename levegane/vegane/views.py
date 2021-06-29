@@ -21,3 +21,6 @@ def tip(request):
 
 def lugar(request):
     return render(request, 'vegane/lugares.html')
+
+def noticiauno(request):
+    return render(request, 'vegane/noticias/unilever.html')
