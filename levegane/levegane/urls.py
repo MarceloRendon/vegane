@@ -33,5 +33,17 @@ urlpatterns = [
     path('beyond/', include('vegane.urls')),
     path('australia/', include('vegane.urls')),
     path('activismo/', include('vegane.urls')),
+    path('nopollo/', include('vegane.urls')),
+    path('ricotta/', include('vegane.urls')),
+    path('harina/', include('vegane.urls')),
+    path('garbanzos/', include('vegane.urls')),
+    path('budin/', include('vegane.urls')),
+    path('ceviche/', include('vegane.urls')),
+    path('champiniones/', include('vegane.urls')),
+    path('carpaccio/', include('vegane.urls')),
+    path('pizzetas/', include('vegane.urls')),
+    path('croquetas/', include('vegane.urls')),
+    path('griega/', include('vegane.urls')),
+    path('quinoa/', include('vegane.urls')),
 
 ]

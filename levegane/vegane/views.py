@@ -22,7 +22,7 @@ def tip(request):
 def lugar(request):
     return render(request, 'vegane/lugares.html')
 
-
+# def vistas pag de noticias
 def noticiauno(request):
     return render(request, 'vegane/noticias/unilever.html')
 
@@ -52,4 +52,41 @@ def noticiaocho(request):
 def noticianueve(request):
     return render(request, 'vegane/noticias/activismo.html')
 
+
+#def vista de recetas
+def recetauno(request):
+    return render(request, 'vegane/recetasitios/sandwich-no-pollo.html')
+
+def recetados(request):
+    return render(request, 'vegane/recetasitios/ricotta-de-mani.html')
+
+def recetatres(request):
+    return render(request, 'vegane/recetasitios/harina-de-garbanzos.html')
+
+def recetacuatro(request):
+    return render(request, 'vegane/recetasitios/ensalada-de-garbanzos.html')
+
+def recetacinco(request):
+    return render(request, 'vegane/recetasitios/budin-de-algarroba.html')
+
+def recetaseis(request):
+    return render(request, 'vegane/recetasitios/ceviche-de-champiniones.html')
+
+def recetasiete(request):
+    return render(request, 'vegane/recetasitios/champiniones-rellenos.html')
+
+def recetaocho(request):
+    return render(request, 'vegane/recetasitios/carpaccio-de-verduras.html')
+
+def recetanueve(request):
+    return render(request, 'vegane/recetasitios/pizzetas-de-zapallo-italiano.html')
+
+def recetadiez(request):
+    return render(request, 'vegane/recetasitios/croqueta-de-zanahoria.html')
+
+def recetaonce(request):
+    return render(request, 'vegane/recetasitios/ensalada-griega.html')
+
+def recetadoce(request):
+    return render(request, 'vegane/recetasitios/ensalada-de-quinoa.html')
 
