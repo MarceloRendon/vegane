@@ -36,11 +36,14 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $("#enviar").click(function () {
-                $.get("/categories.php.json",
+                console.log("Enviado");
+                $.get("/static/vegane/json/categories.json"),(
                     function (data) {
+                        console.log("cargado");
                         $.each(data.categories, function (i, item) {
+                            console.log(item.strCategory + " " + item.strCategoryThumb + " " + item.strCategoryDescription + " " + item.strContacto);
                             $("#categoria").append("<tr><td>" + item.strCategory + "</td><td><iframe src='" + item.strCategoryThumb + "' width='400' height='250' style='border:0;' allowfullscreen='' loading='lazy'></iframe></td><td>" + item.strCategoryDescription + "</td><td> <a href='" + item.strContacto + "' target='_blank'><img src='images/logos/Icono-Telefono.png' width='100px' height='100px'/></a></td></tr>");
-                        });
+                        }); 
                     });
             });
         });
@@ -67,26 +70,26 @@
             <div class="navbar-collapse collapse" id="navbarsExample07">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="/">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="iniciar-sesion/">Iniciar sesión</a>
+                        <a class="nav-link active" aria-current="page" href="/iniciar-sesion">Iniciar sesión</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="registrar/">Registrarse</a>
+                        <a class="nav-link active" aria-current="page" href="/registrar">Registrarse</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="recetas/">Recetas</a>
+                        <a class="nav-link active" aria-current="page" href="/recetas">Recetas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="noticias/">Noticias</a>
+                        <a class="nav-link active" aria-current="page" href="/noticias">Noticias</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-bs-toggle="dropdown"
                             aria-expanded="false">Más</a>
                         <ul class="dropdown-menu" aria-labelledby="dropdown07">
-                            <li><a class="dropdown-item" href="lugares/">Lugares Recomendados</a></li>
-                            <li><a class="dropdown-item" href="tips/">Tips</a></li>
+                            <li><a class="dropdown-item" href="/lugares">Lugares Recomendados</a></li>
+                            <li><a class="dropdown-item" href="/tips">Tips</a></li>
                         </ul>
                     </li>
                 </ul>

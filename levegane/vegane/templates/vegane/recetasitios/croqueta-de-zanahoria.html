@@ -43,26 +43,26 @@
                 <div class="navbar-collapse collapse" id="navbarsExample07">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="/">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="recetas/">Recetas</a>
+                            <a class="nav-link active" aria-current="page" href="/recetas">Recetas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="noticias/">Noticias</a>
+                            <a class="nav-link active" aria-current="page" href="/noticias">Noticias</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="registrar/">Registrarse</a>
+                            <a class="nav-link active" aria-current="page" href="/registrar">Registrarse</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="iniciar-sesion/">Iniciar sesión</a>
+                            <a class="nav-link active" aria-current="page" href="/iniciar-sesion">Iniciar sesión</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-bs-toggle="dropdown"
                                 aria-expanded="false">Más</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdown07">
-                                <li><a class="dropdown-item" href="lugares/">Lugares Recomendados</a></li>
-                                <li><a class="dropdown-item" href="tips/">Tips</a></li>
+                                <li><a class="dropdown-item" href="/lugares">Lugares Recomendados</a></li>
+                                <li><a class="dropdown-item" href="/tips">Tips</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -73,7 +73,7 @@
         
         
         <!-- Page Header-->
-        <header class="masthead" style="background-image: url('../images/recetas/receta10.jpeg')">
+        <header class="masthead" style="background-image: url('/static/vegane/img/receta10.jpeg')">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row">
@@ -129,7 +129,7 @@
                             </ol>
                         </p>
                         <h3 class="section-heading">A DISFRUTAR! :D</h3>
-                        <img src="../images/recetas/receta10.jpeg" alt="">
+                        <img src="{% static 'vegane/img/receta10.jpeg' %}" alt="">
 
                         </p>
                     </div>
